@@ -1,0 +1,90 @@
+{
+	"pages": {
+		"global": {
+			"text1": "Test1"
+		},
+		"signin": {
+			"text": "SignIn"
+		}
+	},
+	"components": {
+		"input": {
+			"placeholder": [
+				{ "username": "Username" },
+				{ "email": "name@example.com" }
+			]
+		},
+		"button": [
+			{ "submit": "Submit" },
+			{ "signin": "Sign In" },
+			{ "signout": "Sign Out" },
+			{ "reset": "Reset" }
+		],
+		"checkbox": {
+			"label": [
+				{ "langSwitch": "International" }
+			]
+		},
+		"popup": [
+			{
+				"expired": {
+					"title": "Warning",
+					"desc": "Token Expired, Please login again",
+					"confirm": "Yes",
+					"cancel": "No"
+				}
+			}
+		]
+	},
+	"errors": [
+		{
+			"code": "ER-0001",
+			"desc": "System Error",
+			"fix": "Please contact system admin"
+		},
+		{
+			"code": "ER-0002",
+			"desc": "Server Error",
+			"fix": "Server has encountered an internal error"
+		},
+		{
+			"code": "ER-0003",
+			"desc": "Network Error",
+			"fix": "Software caused connection abort"
+		}
+	],
+	"network": {
+		"error": [
+			{
+				"status": "Error 400",
+				"type": "Bad Request",
+				"desc": "Your browser sent a request that this server could not understand"
+			},
+			{
+				"status": "Error 401",
+				"type": "Unauthorized",
+				"desc": "Access is denied due to invalid credentials"
+			},
+			{
+				"status": "Error 403",
+				"type": "Forbideen",
+				"desc": "You don't have permission to access"
+			},
+			{
+				"status": "Error 404",
+				"type": "Not Found",
+				"desc": "The page you are looking for does not exist"
+			},
+			{
+				"status": "Error 500",
+				"type": "Server Error",
+				"desc": "Http error 500 Internal Server Error"
+			},
+			{
+				"status": "Error 503",
+				"type": "Service Unavailable",
+				"desc": "Service temporarily unavailable"
+			}
+		]
+	}
+}
