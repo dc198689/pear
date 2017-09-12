@@ -34,7 +34,7 @@
 			</span>
 		</div>
 		<div>
-			<el-button @click="test">默认按钮</el-button>
+			<el-button @click="test">Test Event Bus</el-button>
 		</div>
 	</div>
 </template>
