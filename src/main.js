@@ -1,5 +1,5 @@
 /**
- * Import Global Style
+ * Import Global Style (.css)
  */
 import 'element-ui/lib/theme-default/index.css'
 

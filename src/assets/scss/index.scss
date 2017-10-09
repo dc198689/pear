@@ -1,10 +1,2 @@
-// For Test ONLY
-@mixin grid($flex) {
-	@if $flex {
-		background: red;
-		opacity: 0.5;
-		transition: transform 1s;
-	} @else {
-		background: yellow;
-	}
-}
+// Import Dependency
+@import './transitions/index.scss';

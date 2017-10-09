@@ -50,7 +50,8 @@ exports.cssLoaders = function(options) {
 				loader: 'sass-resources-loader',
 				options: {
 					resources: [
-						resolveResouce('index.scss')
+						resolveResouce('mixins/index.scss'),
+						resolveResouce('vars/index.scss')
 					]
 				}
 			}
