@@ -1,6 +1,17 @@
 # pear
 
-> A Vue.js project
+> Folder Structure Practice of VueJS Project
+
+## Guide of Medium Articles
+``` bash
+Reusable, Scalable and Easy to organize project using VueJS [Part 1](https://medium.com/hong-kong-tech/reusable-scalable-and-easy-to-organize-project-using-vuejs-part-1-d08fa83b8581)
+
+Reusable, Scalable and Easy to organize project using VueJS [Part 2](https://medium.com/hong-kong-tech/reusable-scalable-and-easy-to-organize-project-using-vuejs-part-2-c7e82044d7fc)
+
+Reusable, Scalable and Easy to organize project using VueJS [Part 3](https://medium.com/hong-kong-tech/reusable-scalable-and-easy-to-organize-project-using-vuejs-part-3-ed8cba6b4dfe)
+
+Dynamic Translate using vue-i18n ( VueJS ) [Here](https://medium.com/hong-kong-tech/dynamic-translate-using-vue-i18n-vuejs-c730093a63e2)
+```
 
 ## Build Setup
 
