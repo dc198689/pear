@@ -1,0 +1,36 @@
+/**
+ * Transitions
+ */
+.turn-on {
+	&-enter {
+		transform: translate3d(100%, 0, 0);
+	}
+
+	&-leave-to {
+		transform: translate3d(-20%, 0, 0);
+	}
+
+	&-enter-active,
+	&-leave-active {
+		transition: transform 0.4s ease;
+	}
+}
+
+.turn-off {
+	&-enter {
+		transform: translate3d(-20%, 0, 0);
+	}
+
+	&-leave-to {
+		transform: translate3d(100%, 0, 0);
+	}
+
+	&-leave-active {
+		z-index: 2;
+	}
+
+	&-enter-active,
+	&-leave-active {
+		transition: transform 0.4s ease;
+	}
+}

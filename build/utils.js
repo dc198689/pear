@@ -39,8 +39,8 @@ exports.cssLoaders = function(options) {
 		}
 	}
 
-	function resolveResouce(name) {
-		return path.resolve(__dirname, '../src/assets/scss/' + name);
+	function resolveResouce(fileName) {
+		return path.resolve(__dirname, '../src/assets/scss/' + fileName)
 	}
 
 	function generateSassResourceLoader() {
@@ -50,7 +50,7 @@ exports.cssLoaders = function(options) {
 				loader: 'sass-resources-loader',
 				options: {
 					resources: [
-						resolveResouce('_app.scss')
+						resolveResouce('index.scss')
 					]
 				}
 			}
