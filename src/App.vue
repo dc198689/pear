@@ -65,6 +65,7 @@
 		color: #2c3e50;
 		margin-top: 60px;
 		background: url('./assets/img/bg.jpg') no-repeat top center;
+		@include grid(true);
 	}
 	.expire-box {
 		font-family: 'Avenir', Helvetica, Arial, sans-serif;

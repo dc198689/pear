@@ -1,0 +1,10 @@
+/**
+ * Tables
+ */
+@mixin grid($flex) {
+	@if $flex {
+		transition: transform 1s;
+	} @else {
+		background: yellow;
+	}
+}

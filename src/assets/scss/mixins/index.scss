@@ -1,10 +1,8 @@
 /**
- * Mixins
+ * Import Dependency
  */
-@mixin grid($flex) {
-	@if $flex {
-		transition: transform 1s;
-	} @else {
-		background: yellow;
-	}
-}
+@import './breakpoints/index.scss';
+@import './animations/index.scss';
+@import './buttons/index.scss';
+@import './tables/index.scss';
+@import './transitions/index.scss';
