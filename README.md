@@ -12,6 +12,8 @@ Reusable, Scalable and Easy to organize project using VueJS [Part 3](https://med
 
 Dynamic Translate using vue-i18n ( VueJS ) [Here](https://medium.com/hong-kong-tech/dynamic-translate-using-vue-i18n-vuejs-c730093a63e2)
 
+Use SASS/SCSS of Webpack in VueJS [Here](https://medium.com/hong-kong-tech/use-sass-scss-of-webpack-in-vuejs-8dde3a83611e)
+
 
 ## Build Setup
 
