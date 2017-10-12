@@ -1,8 +1,8 @@
 /**
- * Import Global Style (.css)
+ * Import Global Style (.css/.scss)
  */
-import 'element-ui/lib/theme-default/index.css'
-import './assets/scss/index.scss'
+import 'element-ui/lib/theme-default/index.css' // Theme UI
+import './assets/scss/index.scss' // Customize UI
 
 /**
  * Import Dependency

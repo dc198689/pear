@@ -2,7 +2,7 @@
 	<div id="app">
 		<loading :loadingStatus="loadingStatus"></loading>
 		<alert :alertStatus="alertStatus"></alert>
-		<img src="./assets/img/logo.png" class="aaa">
+		<img src="./assets/img/logo.png">
 		<router-view></router-view>
 	</div>
 </template>
@@ -64,6 +64,7 @@
 		text-align: center;
 		color: #2c3e50;
 		margin-top: 60px;
+		// background: $bg-white-light;
 		// background: url('./assets/img/bg.jpg') no-repeat top center;
 		// @include grid(true);
 	}
