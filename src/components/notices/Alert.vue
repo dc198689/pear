@@ -1,9 +1,11 @@
 <template>
 	<div class="component alert">
 		<template>
+			<!--
 			<div>
 				{{ alertStatus }}
 			</div>
+			-->
 		</template>
 	</div>
 </template>

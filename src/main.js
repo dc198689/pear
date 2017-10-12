@@ -2,6 +2,7 @@
  * Import Global Style (.css)
  */
 import 'element-ui/lib/theme-default/index.css'
+import './assets/scss/index.scss'
 
 /**
  * Import Dependency

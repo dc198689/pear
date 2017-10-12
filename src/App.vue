@@ -2,7 +2,7 @@
 	<div id="app">
 		<loading :loadingStatus="loadingStatus"></loading>
 		<alert :alertStatus="alertStatus"></alert>
-		<img src="./assets/img/logo.png">
+		<img src="./assets/img/logo.png" class="aaa">
 		<router-view></router-view>
 	</div>
 </template>
@@ -64,8 +64,8 @@
 		text-align: center;
 		color: #2c3e50;
 		margin-top: 60px;
-		background: url('./assets/img/bg.jpg') no-repeat top center;
-		@include grid(true);
+		// background: url('./assets/img/bg.jpg') no-repeat top center;
+		// @include grid(true);
 	}
 	.expire-box {
 		font-family: 'Avenir', Helvetica, Arial, sans-serif;
