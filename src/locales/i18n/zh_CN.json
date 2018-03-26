@@ -11,7 +11,8 @@
 		"input": {
 			"placeholder": [
 				{ "username": "使用者名称" },
-				{ "email": "name@example.com" }
+				{ "email": "name@example.com" },
+				{ "password": "密码" }
 			]
 		},
 		"button": [

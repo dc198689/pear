@@ -44,6 +44,7 @@
 				this.loadingStatus = event
 			})
 			this.$bus.$on('alertObj', (event, type) => {
+				console.log(event + type)
 				this.alertStatus = {
 					'obj': event,
 					'type': type

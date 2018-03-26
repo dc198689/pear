@@ -3,11 +3,19 @@
 		<h1>{{ msg }}</h1>
 		<div class="signin-form">
 			<div>
-				<el-input v-model="email" v-bind:placeholder="$t('lang.components.input.placeholder[1].email')"></el-input>
+				<el-input 
+					v-model="email"
+					v-bind:placeholder="$t('lang.components.input.placeholder[1].email')"
+				></el-input>
+				<el-input
+					type="password"
+					v-model="password"
+					v-bind:placeholder="$t('lang.components.input.placeholder[2].password')"
+				></el-input>
 			</div>
 			<div>
 				<el-button type="primary">{{ $t('lang.components.button[3].reset') }}</el-button>
-				<el-button>{{ $t('lang.components.button[1].signin') }}</el-button>
+				<el-button v-on:click="login">{{ $t('lang.components.button[1].signin') }}</el-button>
 			</div>
 		</div>
 		<h2>Essential Links</h2>
@@ -57,7 +65,8 @@
 				msg: 'Welcome to Pear App',
 				title: this.$t('lang.pages.signin.text'),
 				isSwitch: _isSwitch,
-				email: ''
+				email: '',
+				password: ''
 			}
 		},
 		head: {
@@ -68,6 +77,10 @@
 			}
 		},
 		methods: {
+			login() {
+				console.log(this.email)
+				console.log(this.password)
+			},
 			switchI18n() {
 				this.isSwitch = !this.isSwitch
 				if (this.isSwitch) {

@@ -11,7 +11,8 @@
 		"input": {
 			"placeholder": [
 				{ "username": "Username" },
-				{ "email": "name@example.com" }
+				{ "email": "name@example.com" },
+				{ "password": "Password" }
 			]
 		},
 		"button": [

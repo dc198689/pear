@@ -1,0 +1,22 @@
+{
+  "name": "middleware",
+  "version": "1.0.0",
+  "description": "A middleware between Frontend and Backend Side",
+  "main": "app.js",
+  "scripts": {
+    "start": "babel-node app.js --presets es2015",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Tommy Chiu",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "body-parser": "^1.18.2",
+    "cors": "^2.8.4",
+    "express": "^4.16.3"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1"
+  }
+}
