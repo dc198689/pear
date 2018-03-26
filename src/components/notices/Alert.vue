@@ -1,9 +1,9 @@
 <template>
 	<div class="component alert">
 		<template>
-			<div>
+			<!-- <div>
 				{{ alertStatus }}
-			</div>
+			</div> -->
 		</template>
 	</div>
 </template>

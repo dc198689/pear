@@ -2,7 +2,7 @@
 	<div id="app">
 		<loading :loadingStatus="loadingStatus"></loading>
 		<alert :alertStatus="alertStatus"></alert>
-		<img src="./assets/img/logo.png">
+		<!-- <img src="./assets/img/logo.png"> -->
 		<router-view></router-view>
 	</div>
 </template>

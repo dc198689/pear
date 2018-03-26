@@ -6,8 +6,8 @@ import axios from '../../../interceptor'
 /**
  * Declare Variable
  */
-const baseUrl = 'http://localhost:8888/'
-const signinUrl = `${baseUrl}/signin`
+const baseUrl = 'http://localhost:4400/auth/'
+// const signinUrl = `${baseUrl}/signin`
 const signoutUrl = `${baseUrl}/signout`
 const refreshTokenUrl = `${baseUrl}/token/refresh`
 
@@ -16,8 +16,9 @@ const refreshTokenUrl = `${baseUrl}/token/refresh`
  */
 export default {
 	signin(data) {
-		return axios.post(signinUrl, {
-			'username': data.username
+		return axios.post(baseUrl, {
+			'email': data.email,
+			'password': data.password
 		})
 	},
 	signout(data) {

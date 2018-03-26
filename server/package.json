@@ -4,7 +4,7 @@
   "description": "A middleware between Frontend and Backend Side",
   "main": "app.js",
   "scripts": {
-    "start": "babel-node app.js --presets es2015",
+    "start": "nodemon --exec babel-node app.js --presets es2015",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Tommy Chiu",
@@ -13,7 +13,10 @@
     "axios": "^0.18.0",
     "body-parser": "^1.18.2",
     "cors": "^2.8.4",
-    "express": "^4.16.3"
+    "express": "^4.16.3",
+    "morgan": "^1.9.0",
+    "passport": "^0.4.0",
+    "passport-http-bearer": "^1.0.1"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",

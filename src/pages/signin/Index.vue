@@ -65,8 +65,8 @@
 				msg: 'Welcome to Pear App',
 				title: this.$t('lang.pages.signin.text'),
 				isSwitch: _isSwitch,
-				email: '',
-				password: ''
+				email: 'tommy@gmail.com',
+				password: 'tommy123456'
 			}
 		},
 		head: {
@@ -78,8 +78,11 @@
 		},
 		methods: {
 			login() {
-				console.log(this.email)
-				console.log(this.password)
+				let loginObj = {
+					'email': this.email,
+					'password': this.password
+				}
+				this.$store.dispatch('signin', loginObj)
 			},
 			switchI18n() {
 				this.isSwitch = !this.isSwitch
