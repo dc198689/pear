@@ -6,7 +6,7 @@ import axios from '../../../interceptor'
 /**
  * Declare Variable
  */
-const baseUrl = 'http://localhost:4400/auth/'
+const baseUrl = 'http://localhost:4400/auth'
 // const signinUrl = `${baseUrl}/signin`
 const signoutUrl = `${baseUrl}/signout`
 const refreshTokenUrl = `${baseUrl}/token/refresh`
