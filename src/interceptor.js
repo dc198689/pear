@@ -2,7 +2,7 @@
  * Import Dependency
  */
 import axios from 'axios'
-import store from './store'
+// import store from './store'
 
 /**
  * Config
@@ -17,11 +17,13 @@ axios.defaults.timeout = 5000
  * Config
  */
 axios.interceptors.request.use(config => {
-	let credential = store.state.credential
-	let isAuthorize = store.state.isAuthorize
-	if (credential && isAuthorize) {
-		config.headers.common['Authorization'] = 'Bearer ' + credential
-	}
+	// let credential = store.state.credential
+	// let isAuthorize = store.state.isAuthorize
+	let tmpCredential = '123456789'
+	// if (credential && isAuthorize) {
+	// 	config.headers.common['Authorization'] = 'Bearer ' + credential
+	// }
+	config.headers.common['Authorization'] = 'Bearer ' + tmpCredential
 	return config
 }, error => {
 	console.group('[Axios][Interceptor] Request Error')
