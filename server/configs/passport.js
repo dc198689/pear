@@ -21,7 +21,7 @@ exports.findUserByToken = function() {
     console.log('2')
     passport.use(new BearerStragtegy(function(token, cb) {
         console.log('3')
-        console.log(token)
+        console.log(token + ' [passport.js]')
         User.findByToken(token, function(err, user) {
             if (err) {
                 return cb(err)
@@ -29,6 +29,7 @@ exports.findUserByToken = function() {
             if (!user) {
                 return cb(null, false)
             }
+            console.log('5')
             console.log(user)
             return cb(null, user)
         })

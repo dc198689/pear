@@ -18,16 +18,18 @@ exports.connectDatabase = function(url, done) {
     if (state.db) {
         return done()
     }
-    MongoClient.connect(url, function(err, db) {
+    MongoClient.connect('mongodb://localhost:27017/', function(err, client) {
         if (err) {
             return done(err)
         }
-        state.db = db
+        let _db = client.db('pear')
+        state.db = _db
         done()
     })
 }
 
 exports.getDatabase = function() {
+    console.log('Current Db ' + state.db)
     return state.db
 }
 
@@ -38,5 +40,16 @@ exports.closeDatabase = function(done) {
             state.mode = null
             done(err)
         })
+    }
+}
+
+exports.checkCollectionExist = function() {
+    if (state.db) {
+        state.db.collection('users').find().toArray(function(err, result) {
+            if (err) throw err
+            console.log(result)
+        })
+    } else {
+        console.log('err')
     }
 }

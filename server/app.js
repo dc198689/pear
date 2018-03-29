@@ -23,7 +23,6 @@ import controllers from './controllers'
 /**
  * Global Config
  */
-
 app.use(cors())
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: false }))
@@ -38,6 +37,7 @@ mongodb.connectDatabase(`${url}/${database}`, function(err) {
         process.exit(1)
     } else {
         console.log('1')
+        // mongodb.checkCollectionExist()
         passport.findUserByToken()
         app.listen(port, function() {
             console.log('Listening on port : ' + port)
