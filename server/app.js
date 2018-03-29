@@ -16,7 +16,8 @@ const database = 'pear'
 /**
  * Import Others (Global)
  */
-import mongodb from './configs/mongodb'
+import mongodb from './configs/mongodb.js'
+import passport from './configs/passport.js'
 import controllers from './controllers'
 
 /**
@@ -36,6 +37,8 @@ mongodb.connectDatabase(`${url}/${database}`, function(err) {
         console.log(`Unable to connect to ${database}`)
         process.exit(1)
     } else {
+        console.log('1')
+        passport.findUserByToken()
         app.listen(port, function() {
             console.log('Listening on port : ' + port)
         })

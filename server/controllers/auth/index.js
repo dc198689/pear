@@ -21,7 +21,7 @@ router.post('/',
     passport.authenticate('bearer', { session: false }), function(req, res) {
         console.log('Come Test')
         console.log(req.body)
-        console.log(database.get().collection('pear'))
+        console.log(database.getDatabase().collection('users'))
         res.json({
             username: req.user.username,
             email: req.user.emails[0].value

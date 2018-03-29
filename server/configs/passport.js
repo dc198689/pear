@@ -5,9 +5,9 @@ import passport from 'passport'
 import passportBearer from 'passport-http-bearer'
 
 /**
- * Import Others
+ * Import Models
  */
-import database from './mongodb.js'
+import User from '../models/mongodb/users/index.js'
 
 /**
  * Declare Variables
@@ -17,9 +17,12 @@ let BearerStragtegy = passportBearer.Strategy
 /**
  * Export
  */
-export default function() {
+exports.findUserByToken = function() {
+    console.log('2')
     passport.use(new BearerStragtegy(function(token, cb) {
-        database.users.findByToken(token, function(err, user) {
+        console.log('3')
+        console.log(token)
+        User.findByToken(token, function(err, user) {
             if (err) {
                 return cb(err)
             }
