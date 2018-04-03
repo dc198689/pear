@@ -10,8 +10,10 @@ import cors from 'cors'
  */
 let app = express()
 let port = process.env.PORT || 4400
-const url = 'mongodb://localhost:27017'
-const database = 'pear'
+const connection = {
+    'url': 'mongodb://localhost:27017',
+    'database': 'pear'
+}
 
 /**
  * Import Others (Global)
@@ -31,13 +33,12 @@ app.use(controllers)
 /**
  * Start
  */
-mongodb.connectDatabase(`${url}/${database}`, function(err) {
+mongodb.connectDatabase(connection, function(err) {
     if (err) {
-        console.log(`Unable to connect to ${database}`)
+        console.log(`Unable to connect to ${connection.database}`)
         process.exit(1)
     } else {
         console.log('1')
-        // mongodb.checkCollectionExist()
         passport.findUserByToken()
         app.listen(port, function() {
             console.log('Listening on port : ' + port)

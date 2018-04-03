@@ -23,6 +23,7 @@ const actions = {
 	async signin({ commit }, context) {
 		try {
 			const response = await authAPI.signin(context)
+			console.log(response)
 			commit(types.LOGIN_SUCCESS, response.data)
 			return Promise.resolve(response.data)
 		} catch (e) {

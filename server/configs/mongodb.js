@@ -14,22 +14,21 @@ let state = {
 /**
  * Export
  */
-exports.connectDatabase = function(url, done) {
+exports.connectDatabase = function(connection, done) {
     if (state.db) {
         return done()
     }
-    MongoClient.connect('mongodb://localhost:27017/', function(err, client) {
+    MongoClient.connect(connection.url, function(err, client) {
         if (err) {
             return done(err)
         }
-        let _db = client.db('pear')
+        let _db = client.db(connection.database)
         state.db = _db
         done()
     })
 }
 
 exports.getDatabase = function() {
-    console.log('Current Db ' + state.db)
     return state.db
 }
 

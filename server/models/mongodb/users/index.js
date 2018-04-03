@@ -22,12 +22,8 @@ exports.findByToken = function(token, cb) {
     if (database.getDatabase() !== null) {
         console.log('4')
         database.getDatabase().collection('users')
-            .find({
-                'token': token
-            })
-            .toArray(function(err, docs) {
-                console.log(docs)
-                cb(err, docs)
+            .findOne({'token': token}, function(err, result) {
+                cb(err, result)
             })
     }
 }
